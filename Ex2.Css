@@ -1,0 +1,84 @@
+.parent {
+  background-color: #a19090;
+  margin-left: 100px;
+  width: 1000px;
+  height: 600px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 100px auto 100px;
+  grid-template-areas:
+    " head head head head head head head head head head" "aside aside aside article article article article article article article"
+    "footer footer footer footer footer footer footer footer footer footer ";
+  gap: 10px;
+}
+
+.head {
+  grid-area: head;
+  background-color: #ff9b6d;
+  display: flex;
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.head .logo {
+  width: 20%;
+  background-color: #ffd37c;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.head .nav {
+  width: 80%;
+  background-color: #ffd37c;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  grid-area: aside;
+  background-color: #ceea41;
+  grid-row: span 2; /* ?????*/ /* هون حطينا انو المساحة تبعت الاسايد فوق تساوي مساحة الاسايد , بالتالي مبلش من الصف الثاني تلقائيا , */
+  margin: 0 0 5px 5px;
+}
+
+aside div {
+  background-color: #a9ba4f;
+  margin: 10px;
+  height: 30%;
+  text-align: center;
+}
+
+article {
+  display: inline-flex;
+  grid-area: article;
+  background-color: #7dbca9;
+}
+
+article div {
+  background-color: #8de1ca;
+  width: 30%;
+  height: 60%;
+  margin: 10px;
+  margin-top: 100px;
+}
+
+footer {
+  display: flex;
+  grid-area: footer;
+  background-color: #87ceeb;
+  grid-column: 4 / span 8;
+  margin: 0 10px 10px 0;
+}
+
+footer div {
+  background-color: #8a9dc7;
+  margin: 10px;
+}
+footer .foot1 {
+  width: 70%;
+}
+footer .foot2 {
+  width: 30%;
+}

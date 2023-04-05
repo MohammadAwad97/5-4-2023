@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 200px;
+    align-items: center;
+}
+
+body div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:2.5px;
+    width:900px;
+    background-color:rgb(128, 128, 128) ;
+
+
+}
+
+.one {
+    height: 20vh;
+}
+.two {
+    height: 30vh;
+}
+.three {
+    height: 15vh;
+}
+.four {
+    height: 35vh;
+}
+.five{
+    height: 50vh;
+}
+.one {
+    height: 20vh;
+}
